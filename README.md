@@ -33,4 +33,37 @@ sudo chown -R ec2-user:apache /var/www
 sudo chmod 2775 /var/www/ && find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 ```
-
+***Setting up git on server and project on it***
+```
+Sudo yum install git -y
+Get personal acess  key from github
+Git clone the project on server 
+Now lets config the project 
+```
+### Now lets setup the domain like on godaddy
+### Now lets config the appache server
+```
+cd /var/www/
+cd /etc/httpd/conf
+ls
+sudo nano httpd.conf
+```
+***At last of the file type  ***
+```
+# Vhost for http://test.justtolearn.xyz
+<virtualHost *:80>
+        DocumentRoot "/var/www/html/production_server"
+        serverName "test.justtolearn.xyz"
+        <Directory /var/www/html/production_server>
+        AllowOverride All
+        allow from all
+        Options +Indexes
+        </Directory>
+</virtualHost>
+```
+***And then save it
+Move the project folder to http folder 
+Now  connect aws rds in project with configerature 
+Now git pull on server 
+Now create the database and table according to the project requirement..
+***
