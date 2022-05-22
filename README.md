@@ -96,7 +96,7 @@ cd /etc/httpd/conf
 ls
 sudo nano httpd.conf
 ```
-***At last of the file type  ***
+***At last of the file type***
 ```
 # Vhost for http://test.justtolearn.xyz
 <virtualHost *:80>
@@ -113,8 +113,7 @@ sudo nano httpd.conf
 Move the project folder to http folder 
 Now  connect aws rds in project with configerature 
 Now git pull on server 
-Now create the database and table according to the project requirement..
-***
+Now create the database and table according to the project requirement..***
 
 ![Screenshot](https://github.com/prakash02dec/Hosting-dynamic-application-AWS-RDS-/blob/00f33aa11819d2e6059b04f62660e419f754efa4/images/Screenshot%20(216).png)
 
